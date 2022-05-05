@@ -1,0 +1,14 @@
+<view>
+  <view class="video-container" >
+    <video src="{{videoData.video}}"></video>
+  </view>
+  <van-tabs animated sticky color="#57b5e5" swipeable="true">
+  <van-tab title="介绍">
+    <view style="padding: 20rpx;">
+      <view class="title">{{videoData.name}}</view>
+      <!-- <view class="descrition">描述描述描述描述描述描述描述描述描述描述描述描述描述描述描述描述描述描述描述描述描述描述描述描述</view> -->
+    </view>
+  </van-tab>
+  <van-tab title="评论">暂无评论</van-tab>
+</van-tabs>
+</view>

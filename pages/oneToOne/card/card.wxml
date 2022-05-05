@@ -1,0 +1,12 @@
+<view class="card">
+  <view class="image">
+    <image src="{{photo}}" mode="aspectFill"></image>
+  </view>
+  <view class="data">
+    <view class="name" style="font-size: 20px; ">{{name}}</view>
+    <view style="color: #999;">{{gender}}</view>
+  </view>
+  <view class="button">
+    <button bindtap="buttonclick">预约</button>
+  </view>
+</view>

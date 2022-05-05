@@ -1,0 +1,6 @@
+{
+  "usingComponents": {
+    "TeacherCard": "/components/TeacherCard/TeacherCard",
+    "van-notice-bar": "/miniprogram_npm/vant-weapp/notice-bar/index"
+  }
+}

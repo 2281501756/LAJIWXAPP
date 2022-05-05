@@ -1,0 +1,19 @@
+<view style="background-color: #e1e1e1; width: 100%;" >
+  <van-notice-bar
+    text="医学是一门科学，但要成为一名医术高超的大夫却是一门艺术"
+  />
+  <swiper indicator-dots="true"  autoplay="true" 	interval="5000"	indicator-active-color="#57b5e5" style="margin-bottom: 20rpx; box-sizing: border-box;">
+    <swiper-item>
+      <image src="../../images/th.jpg" mode="aspectFill"  style="height: 300rpx; width: 750rpx;"></image>
+    </swiper-item>
+    <swiper-item>
+      <image src="../../images/th.jpg" mode="aspectFill"  style="height: 300rpx; width: 750rpx;"></image>
+    </swiper-item>
+    <swiper-item>
+      <image src="../../images/th.jpg" mode="aspectFill"  style="height: 300rpx; width: 750rpx;"></image>
+    </swiper-item>
+  </swiper>
+
+  <TeacherCard wx:for="{{teacherList}}" pid="{{item.id}}" name="{{item.name}}" post="{{item.post}}" photo="{{item.photo}}"  description="{{item.description}}"></TeacherCard>
+  <view style="height: 60rpx; text-align: center; ">没有更多了</view>
+</view> 

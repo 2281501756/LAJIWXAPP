@@ -1,0 +1,9 @@
+<view class="root" bindtap="tabclick">
+  <view class="img">
+    <image src="{{photo}}"></image>
+  </view>
+  <view class="data" >
+    <view class="title">{{name}} </view>
+    <view class="num"> {{views}}播放 </view>
+  </view>
+</view>

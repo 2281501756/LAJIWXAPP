@@ -1,0 +1,4 @@
+<view class="=root">
+  <image src="{{userimage}}" mode="aspectFill"></image>
+  <view class="text">{{ text }}</view>
+</view>

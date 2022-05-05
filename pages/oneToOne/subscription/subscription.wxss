@@ -1,0 +1,42 @@
+.card {
+  height: 80px;
+  padding: 10px 0;
+  display: flex;
+  background-color: white;
+}
+.image {
+  height: 100%;
+  width: 20%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.image > image {
+  height: 40px;
+  width: 40px;
+  border-radius: 50%;
+}
+.data {
+  width: 50%;
+  height: 100%;
+}
+.button {
+  height: 100%;
+  width: 30%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.button > button {
+  height: 30px;
+  line-height: 30px;
+  background-color: rgba(0, 110, 255, 0.15);
+  color: #57b5e5;
+  border: 0;
+  border-radius: 15px;
+  font-size: 15px;
+}
+.active {
+  border: 2px solid #57b5e5;
+  color: #57b5e5;
+}

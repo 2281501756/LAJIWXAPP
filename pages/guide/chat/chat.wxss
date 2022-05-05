@@ -1,0 +1,25 @@
+.list {
+  height: 92vh;
+}
+.input {
+  height: 8vh;
+  position: absolute;
+  bottom: 0;
+  width: 100%;
+  display: flex;
+}
+.input > input {
+  width: 80%;
+  padding-left: 20px;
+  height: 100%;
+}
+.input > button {
+  width: 20%;
+  height: 100%;
+  background-color: green;
+  color: white;
+  transition: all 0.1s;
+}
+button:active {
+  transform: scale(0.97);
+}

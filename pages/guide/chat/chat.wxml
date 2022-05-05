@@ -1,0 +1,9 @@
+<view>
+  <scroll-view scroll-y="true" class="list">
+    <ChatItem wx:for="{{listData}}" text="{{item}}" userimage="{{userimage}}"></ChatItem>
+  </scroll-view>
+  <view class="input">
+    <input type="text" placeholder="发送消息" bindconfirm="buttonclick" model:value="{{inputvalue}}" />
+    <button bindtap="buttonclick">发送</button>
+  </view>
+</view>

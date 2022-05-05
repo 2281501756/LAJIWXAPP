@@ -1,0 +1,9 @@
+{
+  "usingComponents": {
+    "van-tab": "/miniprogram_npm/vant-weapp/tab/index",
+    "van-tabs": "/miniprogram_npm/vant-weapp/tabs/index",
+    "TeacherInput": "/components/TeacherInput/TeacherInput",
+    "van-dialog": "/miniprogram_npm/vant-weapp/dialog/index"
+  },
+  "navigationBarTitleText": "康复老师详情"
+}

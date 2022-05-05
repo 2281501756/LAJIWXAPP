@@ -1,0 +1,26 @@
+<view> 
+  <swiper style="height: 750rpx;">
+    <swiper-item>
+      <image src="{{shopData.photo}}" mode="aspectFill"></image>
+    </swiper-item> 
+    <swiper-item>
+      <image src="{{shopData.photo}}"></image>
+    </swiper-item> 
+    <swiper-item>
+      <image src="{{shopData.photo}}"></image>
+    </swiper-item>
+  </swiper>
+  <view style="padding-left: 20rpx;">
+    <view style="color: red; height: 80rpx; line-height: 80rpx; font-size: 45rpx; font-weight: 600;">￥ 1100</view>
+    <view style="font-size: 45rpx;text-indent: 10rpx; margin: 10px">{{shopData.name}}</view>
+     <view style="text-indent: 2em;">{{shopData.description}}</view>
+  </view>
+    <view style="font-size: 40rpx;text-indent: 10rpx; margin: 10px">流览图</view>
+    <image wx:for="{{shopData.photoList}}" src="{{item}}" style="height: 750rpx; width: 100%;" mode="aspectFill"></image>
+  <van-goods-action>
+  <van-goods-action-icon icon="chat-o" text="客服" />
+  <van-goods-action-icon icon="cart-o" text="购物车" />
+  <van-goods-action-button text="加入购物车" type="warning" />
+  <van-goods-action-button text="立即购买" />
+</van-goods-action>
+</view>

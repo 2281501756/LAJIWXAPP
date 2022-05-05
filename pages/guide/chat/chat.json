@@ -1,0 +1,5 @@
+{
+  "usingComponents": {
+    "ChatItem": "/components/ChatItem/ChatItem"
+  }
+}

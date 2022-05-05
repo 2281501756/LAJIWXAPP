@@ -1,0 +1,44 @@
+<view>
+  <view class="card">
+    <view class="card-img">
+      <image src="{{teacher.photo}}"  mode="aspectFill"></image>
+    </view>
+    <view class="card-data">
+      <view>
+        <view class="card-teacher-name">{{teacher.name}}</view>
+        <view class="card-teacher-label">{{teacher.post}}</view>
+      </view>
+      <view class="card-teacher-description">{{teacher.gender}} {{teacher.age}}岁 </view>
+      <view>
+      </view>
+    </view>
+  </view>
+  <van-tabs animated sticky color="#57b5e5" swipeable="true">
+    <van-tab title="老师介绍">
+      <view style="margin-bottom: 30vh;">
+        <TeacherInput title="擅长领域" content="{{teacher.domain}}"></TeacherInput>
+        <TeacherInput title="康复机构" content="{{teacher.unit}}"></TeacherInput>
+        <TeacherInput title="所在地区" content="{{teacher.area}}"></TeacherInput>
+        <TeacherInput title="从业时间" content="{{teacher.worktime}}"></TeacherInput>
+        <TeacherInput title="授课价格" content="{{teacher.price}}"></TeacherInput>
+        <TeacherInput title="康复老师简介" content="{{teacher.description}}"></TeacherInput>
+      </view>
+    </van-tab>
+    <van-tab title="课堂内容">
+      <view style="min-height: 40vh; margin-bottom: 30vh;">
+      </view>
+    </van-tab>
+    <van-tab title="用户评价">
+      <view  style="min-height: 40vh; margin-bottom: 30vh;">
+        <view style="display: flex; justify-content: center; align-items: center; flex-direction: column;"> 
+           <image src="../../../images/notfond.svg" style="width: 60vw" mode="widthFix"></image>
+           <text style="color: var(--blue);">暂无评论</text>
+        </view>
+      </view>
+    </van-tab>
+  </van-tabs>
+  <view style="height: 80rpx; width: 80rpx; position: fixed; right: 20rpx; bottom: 170rpx;">
+    <image src="../../../images/chat.png" bindtap="chatchlick" style="height: 100%; width: 100%;"></image>
+  </view>
+  <button bindtap="buttonbind">立即预约</button>
+</view>

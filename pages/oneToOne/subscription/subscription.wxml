@@ -1,0 +1,43 @@
+<view style="background-color: #eee; width: 100vw; padding: 10px 10px 0; height: 100vh;">
+  <view class="card">
+    <view class="image">
+      <image src="{{teacherdata.photo}}" mode="aspectFill"></image>
+    </view>
+    <view class="data">
+      <view class="name" style="font-size: 20px; ">{{teacherdata.name}}</view>
+      <view style="color: #999;">{{teacherdata.gender}}</view>
+    </view>
+    <view class="button">
+    </view>
+  </view>
+  <view>
+    <view class="body">
+      <view style="height: 50px; line-height: 50px;;">选择时间 <text style="font-size: 12px;">（北京时间）</text></view>
+      <view style="display: flex; align-items: center; padding: 0 10px; height: 80px; width: 100%; background-color: white; border-radius: 5px; margin-bottom: 20px;">
+        <view wx:for="{{dateList}}" style="width: 16.66%; height: 70px; border-radius: 7px;" class="dateSelect {{item.active ?'active' : ''}}"  bindtap="dateSelectChlick" data-index="{{index}}">
+          <view style="height: 50%; padding-top: 10px; text-align: center;">{{item.day}}</view>
+          <view style="height: 50%; text-align: center;">{{item.year}}/{{item.date}}</view>
+        </view>
+      </view>
+
+      <view wx:if="{{dateSelectIndex !== -1}}" style="display: flex; align-items: center; padding: 0 10px; height: 80px; width: 100%; background-color: white; border-radius: 5px;">
+        <view wx:for="{{timeList}}" style="width: 25%; height: 70px; border-radius: 7px;" bindtap="timeSelectChlick" data-index="{{index}}" class="dateSelect {{item.active ? 'active':''}}">
+          <view style="height: 50%; padding-top: 10px; text-align: center;">{{item.time}}</view>
+          <view style="height: 50%; text-align: center;">可预约</view>
+        </view>
+      </view>
+
+    </view>
+  </view> 
+</view>
+<van-button style="position: fixed; bottom: 0; width: 100%;" disabled="{{timeSelectIndex == -1 || dateSelectIndex == -1}}" type="info" size="large" bind:click="buttonclick">立即预约</van-button>
+<van-popup
+  show="{{ show }}"
+  position="bottom"
+  overlay="true"
+  bind:close="onClose"
+>
+  <view style="height: 100px; line-height: 40px; font-size: 24px; text-align: center;">
+    预约成功
+  </view>
+</van-popup>

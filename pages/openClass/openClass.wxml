@@ -1,0 +1,11 @@
+<view>
+  <van-search
+  value="{{ value }}"
+  placeholder="请输入搜索关键词"
+  use-action-slot
+  bind:search="onSearch"
+  >
+    <view slot="action" bind:tap="onSearch">搜索</view>
+  </van-search>
+  <VideoCard wx:for="{{videoList}}" name="{{item.name}}" photo="{{item.photo}}" views="{{item.views}}" pid="{{item.id}}"></VideoCard>
+</view>

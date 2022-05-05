@@ -1,0 +1,16 @@
+.root {
+  /* display: flex; */
+  /* justify-content: space-evenly; */
+  /* flex-direction: column; */
+  min-height: 160rpx;
+  padding-left: 30rpx;
+  border-top: 1px solid #eee;
+}
+.title {
+  height: 80rpx;
+  line-height: 80rpx;
+}
+.title {
+  color: #999;
+  font-size: 24rpx;
+}

@@ -1,0 +1,9 @@
+<view class="root" bindtap="bindcard">
+  <view class="img">
+    <image src="{{photo}}"></image>
+  </view>
+  <view class="data">
+    <view class="title">{{name}}</view>
+    <view class="price">{{price}}￥</view>
+  </view>
+</view>

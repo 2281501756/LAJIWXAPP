@@ -1,0 +1,52 @@
+<view>
+  <van-search value="{{ value }}" placeholder="请输入搜索关键词" />
+  <view style="display: flex; height: 40px;">
+    <view class="select" bindtap="bindDataSelect">
+      选择上课时间
+    </view>
+    <view class="select" bindtap="bindDataAge">
+      选择康复老师条件
+    </view>
+    <view class="select" bindtap="bindAreaAge">
+      选择所在区域
+    </view>
+  </view>
+
+  <view style="background-color: #eee; padding-top: 1px;">
+    <Card bind:buttonclick="buttonclick" wx:for="{{teacherList}}" photo="{{item.photo}}" name="{{item.name}}" gender="{{item.gender}}" worktime="{{item.worktime}}" pid="{{item.id}}"></Card>
+  </view>
+
+  <van-picker
+  wx:if="{{areashow}}"
+  show-toolbar
+  columns="{{ areas }}"
+  bind:cancel="onCancel"
+  bind:confirm="onConfirm"
+  item-height="30"
+  style="position: fixed; bottom: 0; width: 100vw;"
+/>
+
+
+  <van-picker
+  wx:if="{{ageshow}}"
+  show-toolbar
+  columns="{{ columns }}"
+  bind:cancel="onCancel"
+  bind:confirm="onConfirm"
+  item-height="30"
+  style="position: fixed; bottom: 0; width: 100vw;"
+/>
+
+  <van-datetime-picker
+  wx:if="{{timeshow}}"
+  type="date"
+  value="{{ currentDate }}"
+  bind:input="onInput"
+  bind:confirm="bindDataSelected"
+  bind:cancel="bindDataSelected"
+  min-date="{{ minDate }}"
+  formatter="{{ formatter }}"
+  item-height="30"
+  style="position: fixed; bottom: 0; width: 100vw;"
+/>
+</view>

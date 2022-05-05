@@ -1,0 +1,34 @@
+.root {
+  height: 500rpx;
+  width: 355rpx;
+  margin: 10rpx 5rpx ;
+  border: 1px solid rgba(1, 1, 1, 0.1);
+  border-radius: 8px;
+  overflow: hidden;
+}
+.img  {
+  height: 320rpx;
+  width: 100%;
+  margin-bottom: 10rpx;
+}
+.img > image {
+  height: 100%;
+  width: 100%;
+}
+.data {
+  padding-left: 20rpx;
+}
+.title {
+  height: 70rpx;
+  line-height: 50rpx;
+  overflow: hidden;
+  white-space: nowrap;
+  text-overflow: ellipsis;
+}
+.description {
+  font-size: 24rpx;
+  color: #999999;
+}
+.price {
+  color:  red;
+}

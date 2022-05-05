@@ -1,0 +1,50 @@
+{
+  "pages": [
+    "pages/guide/guide",
+    "pages/oneToOne/oneToOne",
+    "pages/openClass/openClass",
+    "pages/shop/shop",
+    "pages/guide/teacherContainer/teacherContainer",
+    "pages/openClass/videopage/videopage",
+    "pages/shop/shopContainer/shopContainer",
+    "pages/guide/chat/chat",
+    "pages/oneToOne/subscription/subscription"
+  ],
+  "window": {
+    "backgroundTextStyle": "light",
+    "navigationBarBackgroundColor": "#57b5e5",
+    "navigationBarTitleText": "小程序名称",
+    "navigationBarTextStyle": "white"
+  },
+  "sitemapLocation": "sitemap.json",
+  "tabBar": {
+    "color": "#111",
+    "selectedColor": "#57b5e5",
+    "list": [
+      {
+        "pagePath": "pages/guide/guide",
+        "text": "康复老师",
+        "iconPath": "/images/a-lujing699.png",
+        "selectedIconPath": "/images/a-lujing699-active.png"
+      },
+      {
+        "pagePath": "pages/oneToOne/oneToOne",
+        "text": "一对一",
+        "iconPath": "/images/yiduiyi.png",
+        "selectedIconPath": "/images/yiduiyi-active.png"
+      },
+      {
+        "pagePath": "pages/openClass/openClass",
+        "text": "公开课",
+        "iconPath": "/images/gongkaike.png",
+        "selectedIconPath": "/images/gongkaike-active.png"
+      },
+      {
+        "pagePath": "pages/shop/shop",
+        "text": "商城",
+        "iconPath": "/images/shangcheng.png",
+        "selectedIconPath": "/images/shangcheng-active.png"
+      }
+    ]
+  }
+}

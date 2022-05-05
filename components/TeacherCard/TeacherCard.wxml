@@ -1,0 +1,15 @@
+<view style="height: 260rpx; padding: 10rpx;" bindtap="bindcard">
+  <view class="card">
+    <view class="card-img">
+      <image src="{{photo}}"  mode="aspectFill"></image>
+    </view>
+    <view class="card-data">
+      <view>
+        <view class="card-teacher-name">{{ name }}</view>
+        <view class="card-teacher-label">{{post}}</view>
+      </view>
+      <view class="card-teacher-description" style="max-height: 57px; overflow: hidden;">{{description}}</view>
+    </view>
+    <view class="yueke">约课</view>
+  </view>
+</view>
